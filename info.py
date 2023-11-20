@@ -36,8 +36,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "@cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002039420546')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1002104220495')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '1002039420546')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '1002104220495')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
@@ -67,7 +67,7 @@ HOW_TO_DOWNLOAD =  environ.get('HOW_TO_DOWNLOAD', 'https://t.me/Sharath_Links/13
 
 AUTO_DELETE_SECONDS = int(environ.get('AUTO_DELETE_SECONDS','30')
 
-FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL','-1002039420546')
+FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL',))
 
 SHORTNER_SITE =  environ.get('SHORTNER_SITE', 'urlshortx.com') #Put Only Shortner Site domain don't put like this https://tnlink.in/
 
