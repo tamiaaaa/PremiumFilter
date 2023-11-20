@@ -22,7 +22,7 @@ PICS = (environ.get('PICS', 'https://telegra.ph/file/7e56d907542396289fee4.jpg h
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6554470558').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '1002009540249').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002009540249').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -36,8 +36,8 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "@cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002039420546')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1002104220495')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
@@ -65,9 +65,9 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 HOW_TO_DOWNLOAD =  environ.get('HOW_TO_DOWNLOAD', 'https://t.me/Sharath_Links/13')
 
-AUTO_DELETE_SECONDS = int(environ.get('30', 100))
+AUTO_DELETE_SECONDS = int(environ.get('AUTO_DELETE_SECONDS','30')
 
-FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL', LOG_CHANNEL))
+FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL','-1002039420546')
 
 SHORTNER_SITE =  environ.get('SHORTNER_SITE', 'urlshortx.com') #Put Only Shortner Site domain don't put like this https://tnlink.in/
 
